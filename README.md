@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ApiExamen
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.19.
@@ -57,3 +58,7 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# PruebaTrimestralEntornoClienteFJSN
+Este repositorio ha sido creado para la prueba trimestral de entorno cliente de 2ºDAW , y depende si para despliegue también dado lo comentado por Damián.
+>>>>>>> origin/main

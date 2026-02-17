@@ -1,0 +1,44 @@
+<h2>Nueva serie</h2>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <div>
+        <label>Title</label>
+        <input type="text" formControlName="title">
+        @if (form.get('title')?.touched && form.get('title')?.invalid) {
+        <small>
+            @if (form.get('title')?.errors?.['required']) { Título obligatorio }
+            @if (form.get('title')?.errors?.['minlength']) { Mínimo 3 caracteres }
+        </small>
+        }
+    </div>
+
+    <div>
+        <label>Channel</label>
+        <input type="text" formControlName="channel">
+        @if (form.get('channel')?.touched && form.get('channel')?.invalid) {
+        <small>El canal es obligatorio.</small>
+        }
+    </div>
+
+    <div>
+        <label>Rating (0-10)</label>
+        <input type="number" formControlName="rating" min="0" max="10">
+        @if (form.get('rating')?.touched && form.get('rating')?.invalid) {
+        <small>
+            @if (form.get('rating')?.errors?.['required']) { Rating obligatorio }
+            @if (form.get('rating')?.errors?.['min'] || form.get('rating')?.errors?.['max']) {
+            Debe estar entre 0 y 10.
+            }
+        </small>
+        }
+    </div>
+
+    <button type="submit" [disabled]="form.invalid || loading">
+        Enviar
+    </button>
+
+</form>
+
+@if (msg) { <p>{{ msg }}</p> }
+@if (error) { <p>{{ error }}</p> }

@@ -1,0 +1,10 @@
+<h2>Listado de series</h2>
+
+<ul>
+    @for (s of listado; track s.title) {
+    <li>
+        <strong>{{ s.title }}</strong>
+        — {{ s.channel }} (rating: {{ s.rating }})
+    </li>
+    }
+</ul>

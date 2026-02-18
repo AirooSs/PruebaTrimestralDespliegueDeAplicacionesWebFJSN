@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ApiExamen
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.19.
@@ -62,3 +63,7 @@ For more information on using the Angular CLI, including detailed command refere
 # PruebaTrimestralEntornoClienteFJSN
 Este repositorio ha sido creado para la prueba trimestral de entorno cliente de 2ºDAW , y depende si para despliegue también dado lo comentado por Damián.
 >>>>>>> origin/main
+=======
+# PruebaTrimestralDespliegueDeAplicacionesWebFJSN
+Este repositorio ha sido creado para la prueba trimestral del 2ºtrimestre de 2ºDAW-Unir
+>>>>>>> f77e9806cac394b7b19d693b943b0057df371ab2
